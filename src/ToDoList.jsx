@@ -44,7 +44,7 @@ const ToDoList = () => {
         <div className="todo-list">
             <h1>Todo List</h1>
 
-            <div>
+            <div className="todo-input">
                 <input
                     type="text"
                     placeholder="Enter task..."
@@ -63,23 +63,27 @@ const ToDoList = () => {
                 {tasks.map((task, index) =>
                     <li key={index}>
                         <span className="text">{task}</span>
-                        <button
-                            className="delete-btn"
-                            onClick={() => deleteTask(index)}
-                        >delete
-                        </button>
 
-                        <button
-                            className="movep-btn"
-                            onClick={() => moveTaskUp(index)}
-                        >UP
-                        </button>
+                        <div className="todo-controls">
+                            
+                            <button
+                                className="delete-btn"
+                                onClick={() => deleteTask(index)}
+                            >delete
+                            </button>
 
-                        <button
-                            className="move-btn"
-                            onClick={() => moveTaskDown(index)}
-                        >DOWN
-                        </button>
+                            <button
+                                className="move-btn"
+                                onClick={() => moveTaskUp(index)}
+                            >UP
+                            </button>
+
+                            <button
+                                className="move-btn"
+                                onClick={() => moveTaskDown(index)}
+                            >DOWN
+                            </button>
+                        </div>
                     </li>)}
             </ul>
         </div>

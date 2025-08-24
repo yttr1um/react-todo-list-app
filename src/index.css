@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    color: whitesmoke;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo-list h1 {
+    font-size: 5rem;
+    margin: 20px 0 50px 0;
+}
+
+.todo-list .todo-input {
+    height: 50px;
+    display: flex;
+    margin: 50px 25%;
+    justify-content: center;
+}
+
+.add-btn {
+    width: 100px;
+}
+
+.todo-input input {
+    flex: 1;
+    padding: 5px;
+}
+
+.todo-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.todo-list li {
+    list-style: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 75px;
+    margin: 0 10%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-list li .todo-controls {
+    display: flex;
+    gap: 5px;
+    height: 100%;
+}
+
+.todo-controls button {
+    --grey-color: #5d5d5d;
+    width: 60px;
+    border: 1px solid var(--grey-color);
+    border-radius: 10px;
+    background: none;
+    color: var(--grey-color);
+    cursor: pointer;
+}
+
+.todo-controls .delete-btn:hover {
+    transition: 0.25s ease;
+    border: 1px solid red;
+    color: red;
+}
+
+.todo-controls .move-btn:hover {
+    transition: 0.25s ease;
+    border: 1px solid blueviolet;
+    color: blueviolet;
+}
