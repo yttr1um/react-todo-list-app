@@ -80,3 +80,12 @@ body {
     border: 1px solid blueviolet;
     color: blueviolet;
 }
+
+footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    color: #757575;
+    margin: 10px;
+}
